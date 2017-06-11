@@ -11,5 +11,5 @@ class HtmlDownloader(object):
 
         if response.status_code != 200:
             return None
-        response.encoding = 'utf-8'
+        response.encoding = 'utf-8' # 此处出过错
         return response.text
